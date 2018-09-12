@@ -44,9 +44,9 @@ main {
   align-self: flex-start;
   justify-self: stretch;
 }
-#movie {
+/* #movie {
   height:110%;
-}
+} */
 
 /* I intend to use classes one, two, and three, later on more when I put in media calls */
 .one {
