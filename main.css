@@ -13,7 +13,7 @@ body {
   overflow: auto;
 }
 header {
-  width: 100%;
+  max-width: 100%;
   order: 1;
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,7 @@ main {
   margin-top: 2%;
 }
 #home-page-img {
-  width: 70%;
+  max-width: 70%;
   align-self: flex-start;
   justify-self: stretch;
 }
@@ -90,4 +90,23 @@ main {
 
 .right {
   margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .featured-work {
+    margin-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and(max-height: 1024px) {
+  .featured-work {
+    height: 50%;
+    overflow: scroll;
+  }
 }
